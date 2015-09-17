@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker run -e GRAYLOG_LABEL=test -e GRAYLOG_HOST=10.244.169.10 -e GRAYLOG_PORT=12201 -v `pwd`:/docker -w /docker --rm -it fluentd-graylog /bin/bash
+
