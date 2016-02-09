@@ -1,3 +1,4 @@
 #!/bin/bash
+source helper
 
-docker build $@ -t fluentd-graylog . 
+docker build $@ -t ${IMAGE} . 
